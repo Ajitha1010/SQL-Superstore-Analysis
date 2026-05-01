@@ -71,11 +71,11 @@ Contains:
 
 ## 🔗 JOIN Queries
 
-11. Order details with customer name and product name  
-12. Total sales for each customer  
-13. Total sales for each product category  
-14. Which customers bought from which product categories  
-15. Customers with zero orders (LEFT JOIN + NULL check)  
+1. Order details with customer name and product name  
+2. Total sales for each customer
+3. Total sales for each product category
+4. Which customers bought from which product categories
+5. Customers with zero orders (LEFT JOIN + NULL check)  
 
 ---
 
@@ -97,22 +97,6 @@ Contains:
 - SQLite  
 - DB Browser for SQLite  
 - GitHub  
-
----
-
-## ⚠️ Challenges Faced
-
-- Dataset originally had only one table  
-- Created separate tables manually for JOIN practice  
-- Handled inconsistent date formats (`DD/MM/YYYY`)  
-- Managed missing leading zeros in dates  
-- Debugged SQL syntax and column issues  
-
----
-
-## 🖼️ Sample Output
-
-<img src="https://github.com/user-attachments/assets/a568eb7e-d735-48c9-b1a8-7548bf502b42" width="500" alt="SQL Output"/>
 
 ---
 
