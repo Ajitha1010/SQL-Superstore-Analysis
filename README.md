@@ -1,9 +1,7 @@
 # 📊 Superstore SQL Analysis
 
-This project contains SQL queries used to analyze a retail Superstore dataset using SQLite.  
-It demonstrates core SQL skills including aggregation, grouping, filtering, joins, NULL handling, date transformation, and business analysis.
+This project contains SQL queries used to analyze a retail Superstore dataset using SQLite. It demonstrates core SQL skills including aggregation, joins, filtering, date transformation, window functions, and business analytics.
 
----
 
 ## 📁 Dataset
 
@@ -16,16 +14,13 @@ The dataset contains transactional retail sales data including:
 - Sales  
 - Order Dates  
 
----
-
 ## 🛠 Database Design
 
 The original dataset was a single table.
 
-To practice SQL joins, it was split into three separate tables:
+To practice SQL joins and database design, it was split into three separate tables:
 
 ### Orders Table
-Contains:
 - Order_ID  
 - Order_Date  
 - Ship_Date  
@@ -35,7 +30,6 @@ Contains:
 - Sales  
 
 ### Customers Table
-Contains:
 - Customer_ID  
 - Customer_Name  
 - Segment  
@@ -44,18 +38,16 @@ Contains:
 - Region  
 
 ### Products Table
-Contains:
 - Product_ID  
 - Product_Name  
 - Category  
 - Sub_Category  
 
----
+# 🔍 SQL Analysis Performed
 
-## 🔍 SQL Analysis Performed
+## Basic SQL Analysis
 
 ### GROUP BY Queries
-
 1. Total sales by region  
 2. Top 5 products by total sales  
 3. Average sales per category  
@@ -67,55 +59,84 @@ Contains:
 9. Number of orders per year  
 10. Category with highest total sales  
 
----
-
-## 🔗 JOIN Queries
+## JOIN Queries
 
 1. Order details with customer name and product name  
-2. Total sales for each customer
-3. Total sales for each product category
-4. Which customers bought from which product categories
-5. Customers with zero orders (LEFT JOIN + NULL check)  
+2. Total sales for each customer  
+3. Total sales for each product category  
+4. Which customers bought from which product categories  
+5. Customers with zero orders using LEFT JOIN + NULL check  
 
----
 
-## 🧠 Key Learnings
 
-- Using `GROUP BY` with aggregate functions (`SUM`, `AVG`, `COUNT`)  
-- Using `COUNT(DISTINCT ...)` for accurate metrics  
-- Understanding `INNER JOIN` vs `LEFT JOIN`  
-- Writing multi-table JOIN queries  
-- Handling NULL values  
-- Working with denormalized datasets  
-- Creating relational tables from a single dataset  
-- Parsing dates in SQLite  
+# Advanced SQL Analysis (Window Functions)
 
----
+## 1. 7-Day Rolling Sales Average by Region
 
-## ⚙️ Tools Used
+Used:
+- AVG() OVER()
+- PARTITION BY
+- Rolling window functions
 
-- SQLite  
-- DB Browser for SQLite  
-- GitHub  
+Business Value:
+Tracks short-term sales trends across different regions.
 
----
 
-## 🚀 How to Run
 
-1. Clone this repository  
-2. Open the `.sql` file in SQLite / DB Browser  
-3. Import the CSV dataset  
-4. Create tables  
-5. Run queries  
+## 2. Month-over-Month Revenue Growth
 
----
+Used:
+- LAG()
+- Date transformation
+- Growth calculations
 
-## 📌 Project Outcome
+Formula:
 
-This project helped strengthen practical SQL skills commonly asked in interviews and data analyst roles:
+(Current Month Sales - Previous Month Sales) / Previous Month Sales
 
-- Aggregations  
-- Joins  
-- Business problem solving  
-- Data cleaning  
-- SQL debugging  
+Business Value:
+Helps identify growth trends and seasonal sales patterns.
+
+
+
+## 3. Customer Spending Rank
+
+Used:
+- DENSE_RANK()
+
+Business Value:
+Identifies high-value customers based on total spending.
+
+
+## 4. Running Total of Sales Over Time
+
+Used:
+- SUM() OVER()
+
+Business Value:
+Tracks cumulative business growth over time.
+
+# 🧠 Key Learnings
+
+- SQL aggregation (SUM, AVG, COUNT)
+- Multi-table joins
+- LEFT JOIN
+- NULL handling
+- Date parsing in SQLite
+- Window functions
+- Rolling averages
+- Revenue growth analysis
+- Customer segmentation
+- Running totals
+- Business-focused SQL analysis
+
+# 📌 Project Outcome
+
+This project helped strengthen practical SQL skills commonly required for:
+
+- Data Analyst roles  
+- SQL interviews  
+- Business analytics projects  
+- Reporting dashboards  
+
+It evolved from basic SQL practice into a business analytics portfolio project using advanced SQL concepts.
