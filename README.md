@@ -140,3 +140,32 @@ This project helped strengthen practical SQL skills commonly required for:
 - Reporting dashboards  
 
 It evolved from basic SQL practice into a business analytics portfolio project using advanced SQL concepts.
+
+# 📊 Excel Dashboard
+
+Built an interactive dashboard in Microsoft Excel using the Superstore dataset.
+
+Dashboard includes:
+
+- Sales by Region
+- Sales by Category
+- Monthly Sales Trend
+- Top 10 Customers
+- KPI Cards (Total Revenue, Total Orders)
+- Interactive Slicers
+
+This helped practice business reporting and dashboard building.
+
+
+# ⚡ Power BI / Power Query
+
+Used Power BI Power Query for data transformation tasks:
+
+- Imported CSV data
+- Fixed delimiter issues
+- Checked null values
+- Created Year and Month columns
+- Removed unnecessary columns
+- Performed table merges (similar to SQL JOINs)
+
+This helped understand ETL workflows used in real analytics projects.
