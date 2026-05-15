@@ -169,3 +169,33 @@ Used Power BI Power Query for data transformation tasks:
 - Performed table merges (similar to SQL JOINs)
 
 This helped understand ETL workflows used in real analytics projects.
+
+# Python (Pandas EDA)
+
+Performed exploratory data analysis using Python, Pandas, and Matplotlib on the same Superstore dataset.
+
+## Data Cleaning
+- Checked missing values using `isnull().sum()`
+- Removed null values from `Postal_Code`
+- Converted `Order_Date` and `Ship_Date` to datetime format
+- Renamed columns for better readability
+
+## Exploratory Data Analysis
+- Sales distribution histogram
+- Total sales by category
+- Top cities by total sales
+- Correlation analysis on numeric columns
+
+## Key Insights
+- Most orders were low-value transactions
+- A small number of high-value orders increased average sales
+- Certain categories generated the highest revenue
+- A few cities contributed significantly to total sales
+
+## Tools Used
+- Python  
+- Pandas  
+- Matplotlib  
+- VS Code  
+- GitHub  
+
